@@ -1,0 +1,54 @@
+def add(x, y):                                             #Function for adding numbers
+    return x + y
+def subtract(x, y):                                         #Function for subtracting numbers
+    return x - y
+def multiply(x, y):                                         #Function for multiplying the numbers
+    return x * y
+def divide(x, y):                                           #Function for dividing numbers
+    return x / y
+print("Select operation.")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+while True:                                                  #Initialization of while loop 
+    choice = input("Enter choice(1/2/3/4): ")                #Taking input from the user
+    
+    if choice in ('1', '2', '3', '4'):                       #Initialization of If-Else ladder  
+        num1 = float(input(" Please Enter first number: "))
+        num2 = float(input(" Please Enter second number: "))
+
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
+
+        elif choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
+        break
+    else:
+        print("Invalid Input")
+        
+        
+        
+        
+        
+        Output:
+        
+        
+        Select operation.
+1.Add
+2.Subtract
+3.Multiply
+4.Divide
+Enter choice(1/2/3/4): 5
+Invalid Input
+Enter choice(1/2/3/4): 2
+ Please Enter first number: 14
+ Please Enter second number: 15
+14.0 - 15.0 = -1.0
